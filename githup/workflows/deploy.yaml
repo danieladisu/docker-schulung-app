@@ -1,0 +1,13 @@
+name: publish to CHCR
+on : 
+push:
+  branches:
+    - main
+jobs:
+  gncr:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+  with:
+    submodules: 'true'
