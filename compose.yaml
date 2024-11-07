@@ -7,3 +7,10 @@ services:
     container_name: hugo-app
     ports:
       - 7080:80
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
+
