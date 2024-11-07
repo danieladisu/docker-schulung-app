@@ -1,6 +1,6 @@
 services:
   hugo-app:
-    image: docker pull ghcr.io/danieladisu/docker-schulung-app:main
+    image: ghcr.io/danieladisu/docker-schulung-app:main
     build:
       context: .
       dockerfile: Dockerfile
